@@ -8,6 +8,8 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
 import {RouterModule,Routes} from '@angular/router';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import{HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 
 const appRoutes:Routes=[
   {
@@ -15,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewemployee",component:ViewemployeeComponent 
+  },
+  {
+    path:"searchemployee",component:SearchemployeeComponent 
   }
 ]
 @NgModule({
@@ -23,13 +28,15 @@ const appRoutes:Routes=[
     NavbarComponent,
     AddemployeeComponent,
     ViewemployeeComponent,
+    SearchemployeeComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

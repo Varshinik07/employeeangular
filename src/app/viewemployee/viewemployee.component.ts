@@ -18,6 +18,16 @@ export class ViewemployeeComponent implements OnInit {
       }
     )
    }
+   deleteemployee=(id:any)=>{
+    let data={
+      "id":id
+    }
+    this.myapi.deleteemployee(data).subscribe(
+      (response)=>{
+        alert("deleted successfully")
+      }
+    )
+   }
 viewemployee:any=[]
 
 
