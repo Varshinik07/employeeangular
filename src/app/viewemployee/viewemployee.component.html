@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">employee code</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">DOJ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of viewemployee">
+                    
+                    <td>{{i.id}}</td>
+                    <td>{{i.employeename}}</td>
+                    <td>{{i.employeecode}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.salary}}</td>
+                    <td>{{i.companyname}}</td>
+                    <td>{{i.doj}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
